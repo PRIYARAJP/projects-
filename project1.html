@@ -30,12 +30,12 @@
 
 9. E is good. Congratulations!
        </pre >
-    <p>In this example we drew a picture of a tree. The tree is an abstract model of the possible sequences of choices, we could make. There is also a data structure called a tree, but usually we don't have a data structure to tell us what choices we have. (If we do have an actual tree data structure, backtracking on it is called depth-first tree searching).</p>
-      
+  <fieldset style="background-color: rgb(227, 230, 232);"> <p>In this example we drew a picture of a tree. The tree is an abstract model of the possible sequences of choices, we could make. There is also a data structure called a tree, but usually we don't have a data structure to tell us what choices we have. (If we do have an actual tree data structure, backtracking on it is called depth-first tree searching).</p>
+      </fieldset>
        <BR>
       
         <h3>The backtracking algorithm.</h3>
-       
+       <fieldset>
        <pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
         boolean solve(Node n){
             if n is a leaf node {
@@ -49,13 +49,14 @@
             }
         }
        </pre>
-   
+           </fieldset>
+   <fieldset style="background-color: rgb(227, 230, 232);">
        <p>
         Notice that the algorithm is expressed as a boolean function. This is essential to understanding the algorithm. If
         
         solve(n) is true, that means node n is part of a solution--that is, noden is one of the nodes on a path from the root to
         
-        some goal node. We say that n is solvable. If solve(n) is false, then there is no path that includes n to any goal node.</p>
+        some goal node. We say that n is solvable. If solve(n) is false, then there is no path that includes n to any goal node.</p> </fieldset>
         <h3>How does this work?        </h3>
         <ul >
             <li>If any child of n is solvable, then n is solvable  .          </li>
@@ -63,15 +64,15 @@
         </ul>
         <p>
             Hence, to decide whether any non-leaf node n is solvable (part of a path to a goal nodel, all you have to do is test whether any child of his solvable. This is done recursively, on each child of n. In the above code, this is done by the lines .</p>
-            <pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            <fieldset><pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
             for each child of n {
                  it sovels succeeds, return true
             }
             return false
-
+</fieldset>
             </pre>
             <p>Eventually the recursion will "bottom" out at a leaf node, if the leaf node is a goal node, it is solvable; if the leaf node is not a goal node, it is not solvable. This is our base case in the above code, this is done by the lines
-            </p>
+            </p><fieldset>
             <pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
                 if n is a leaf node {
                     if the leaf is a goal node, return true
@@ -79,6 +80,7 @@
                 }
 
                 </pre>
+          </fieldset>
                 <p>The backtracking gonthm is simple but important. You should understand it thoroughly. Another way of stating it is as follows: </p>
                 <ul>
                     <li><b>To search a tree:</b></li>
@@ -89,7 +91,7 @@
                 </ul>
                 <h3>Non-recursive backtracking, using a stack</h3>
                 <p>Backtracking is a rather typical recursive algorithm, and any recursive algorithm can be rewritten as a stack algorithm. In fact, that is how your recursive algorithms are translated into machine or assembly language.</p>
-                <pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                <fieldset><pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
     boolean solve(Node n) {
         put noden on the stack;
         while the stack is not empty{
@@ -104,7 +106,7 @@
                 }
             return false
      } 
-                </pre>
+                </pre></fieldset>
                 <p>
                     Starting from the root, the only nodes that can be pushed onto the stack are the children of the noge currently on the top of the stack, and these are only pushed on one child at a time; hence, the nodes on the stack at all times describe a valid path in the tree. Nodes are removed from the stack only when it is known that they have no goal nodes among their descendents. Therefore, if the root node gets removed (making the stack empty), there must have been no goal nodes at all, and no solution to the problem.
                 </p>
@@ -114,7 +116,7 @@
                 </p>
                 <p>
                     Here is the recursive backtracking algorithm, modified slightly to print in reverse order) the nodes along the successful path:
-                    </p>
+                    </p><fieldset>
                     <pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
     boolean solve(Node n) {
       if the leaf is a goal node{
@@ -132,7 +134,7 @@
     }
     return false
     }
-                    </pre>
+                    </pre></fieldset>
                     <h3>Keeping backtracking simple</h3>
                     <p>All of these versions of the backtracking algorithm are pretty simple, but when applied to a real problem, they can get pretty cluttered up with details. Even determining whether the node is a leaf can be complex:
                     </p>
@@ -161,7 +163,7 @@
                         <P>Here's a definition of the Binary Tree class:
                         </P>
                         <BR>
-                            <pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                          <fieldset>  <pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
     public class BinaryTree{
         Binary Tree leftChild = null;
         Binary Tree rightChild = null;
@@ -177,10 +179,10 @@
         }
     }
                                
-                            </pre>
+                            </pre></fieldset>
                             <P>Next we will create a TreeSearch class, and in it we will define a method makeTree) which constructs the above binary tree.
                             </P>
-                            <pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                           <fieldset> <pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
     static Binary Tree makeTree(){
         Binary Tree root, a, b, c, d, e, f;
         c = new BinaryTree("C", null, null, false);
@@ -193,9 +195,10 @@
         return root;
     }
     
-                            </pre>
+                            </pre></fieldset>
                             <P>Here's a main program to create a binary tree and try to solve it:
                             </P>
+                            <fieldset>
                             <pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
         public static void main(String args[]) {
 
@@ -204,9 +207,10 @@
             System.out.println(solvable(tree));
     }
                                     
-                            </pre>
+                            </pre></fieldset>
                             <P>And finally, here's the recursive backtracking routine to solve the binary tree by finding a goal node.
                             </P>
+                            <fieldset>
                             <pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
         static boolean solvable(BinaryTree node) {
 
@@ -221,7 +225,7 @@
            /*5*/ return false;
      }
                                     
-                            </pre>
+                            </pre></fieldset>
                             <P>Here's what the numbered lines are doing:</P>
                             <OL>
                                 <li>if we are given a null node, it's not solvable. This statement is so that we can call this method with the children of a node, without first checking whether those children actually exist.</li>
@@ -238,6 +242,7 @@
                             </p>
                             <p>Each time we ask for another node, we have to check if it is null. In the above we put that check as the first thing in solvable. An alternative would be to check first whether each child exists, and recur only if they do. Here's that alternative version:
                             </p>
+                            <fieldset>
                             <pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
         static boolean solvable(BinaryTree node) {
 
@@ -251,7 +256,7 @@
 
        }
                                     
-                            </pre>
+                            </pre></fieldset>
                             <h3>What are the children?</h3>
                             <p>
                                 One of the things that simplifies the above binary tree search is that, at each choice point, you can ignore all the previous choices. Previous choices don't give you any information about what you should do next, as far as you know, both the left and the night chip are possible solutions. In many problems, however, you may be able to eliminate children immediately, without recursion
@@ -284,7 +289,7 @@
                                 </P><br><br>
                                 <P>Here's the code for method 1:
                                 </P>           
-                                <pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                                <fieldset><pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
     boolean explore1(int row, int column, int color){
 
             if (row>= NUM_ROWS return mapisOK():
@@ -302,10 +307,10 @@
                                 
                     }
 
-                                </pre> 
+                                </pre> </fieldset>
                                 <P>And Here's the code for method 1:
                                 </P>  
-                                <pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                               <fieldset> <pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
     boolean explore2(int row, int column, int color){
 
         if (row>= NUM_ROWS return true;
@@ -326,7 +331,7 @@
                                   
         }
 
-                                </pre>   
+                                </pre>   </fieldset>
                                 <p>Those appear pretty similar, and you might think they are equally good. However, the timing information suggests otherwise:
                                 </p>
                                 <table border="1" align="center" >
@@ -369,7 +374,7 @@
                                             </p>
                                             <p>Here's our debugging code. For this trivial program, there's almost more debugging code than actual code, but in larger programs the proportions will be better.
                                             </p>
-                                            <pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                                            <fieldset><pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
     static String indent="";
                                                 
     static String name(BinaryTree node) {
@@ -404,9 +409,9 @@
                                                         
             return false;
 
-                                            </pre>
+                                            </pre></fieldset>
                                             <p>To use this code, we modify solvable as follows:
-                                            </p>
+                                            </p><fieldset>
                                             <pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
     static boolean solvable (BinaryTree node) {
                                                     
@@ -424,7 +429,7 @@
                                            
      }
 
-                                            </pre>
+                                            </pre></fieldset>
                                             
                                             <p> And we get these results:</p>
 
@@ -481,7 +486,7 @@
                                                 </p>
                                                 <p>The simple solution is to make your debugging statements conditional. For example,
                                                 </p>
-                                                <pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                                                <fieldset><pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
     static final boolean debugging = false;
                                                     
     static void enter(Binary Tree node) {
@@ -522,20 +527,20 @@
                                                         
         }
 
-                                                </pre>
+                                                </pre></fieldset>
                                                 <p>In industry, actual programs often have multiple flags to control different aspects of debugging. Don't worry too much about making your code larger, modern compilers will notice that since the variable debugging is final, it can never be true, and the controlled code will be discarded.
                                                 </p>
                                                 <h3>Trick #4: Create an Exception.
                                                 </h3>
                                                 <P>If an Exception is thrown, you can get information about just where it happened by sending in the message printStackTrace(PrintStream). Since an Exception is an object like any other, you can create and throw your own Exceptions However, Java programmers don't always realize that you can create an Exception without throwing it. For example, the following code.
                                                 </P>
-                                                <pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                                                <fieldset><pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
         new Exception("Checkpoint Charlie") printStackTrace(System.out);
                                                     
-                                                </pre>
+                                                </pre></fieldset>
                                                 <p>will print out a message something like this, and the program will then continue normally. That is, the above code just acts like a print statement.
                                                 </p>
-                                                <pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                                                <fieldset><pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
     java.lang.Exception: Checkpoint Charlie                                                    
                                            
     at TreeSearch.solvable(TreeSearch.java:53)                                                
@@ -548,7 +553,7 @@
                                        
     at bluej.runtime.ExecServer.suspendExecution(Unknown Source)
 
-                                                </pre>
+                                                </pre></fieldset>
                                                 <h3>Example: Cindy's Puzzle
                                                 </h3>
                                                 <P>I call the following puzzle "Cindy's puzzle" for historical reasons. You have some number n of black marbles and the same number of white marbles, and you have a playing board which consists simply of a line of 2ne1 spaces to put the marbles in Start with The black marbles all at one end (say, the left), the white marbles all at the other end, and a free space in between.
@@ -743,7 +748,7 @@
                                                 </p>
                                                 <p>Along with<b> canMove and makeMove, </b>we are using methods <b>puzzleSolved and printBoard</b> with meanings that should be obvious
                                                 </p>
-                                                <pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                                               <fieldset> <pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
     boolean solvable(int[] board) {
                                    
         if (puzzleSolved(board)) {                                                
@@ -774,7 +779,7 @@
     
 }
                                                         
-                                                </pre>
+                                                </pre></fieldset>
                                                 <p>
                                                     Along with canMove and makeMove, we are using methods puzzleSolved and printBoard with meanings that should be obvious:
                                                     </p>
