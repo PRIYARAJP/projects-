@@ -32,9 +32,9 @@
 <li> E is good. Congratulations!</li>
       </ol>
   <fieldset style="background-color: rgb(227, 230, 232); width: 38cm " > 
-  <p >In this example we drew a picture of a tree. The tree is an abstract model of the possible sequences 
-  of choices, we could make. There is also a data structure called a tree, but usually we don't have a data structure to tell us what choices we have.
-  (If we do have an actual tree data structure, backtracking on it is called depth-first tree searching).
+  <p >In this example we drew a picture of a tree. The tree is an abstract model of the possible sequences of choices, we could make. There is also a data structure
+  called a tree, but usually we don't have a data structure to tell us what choices we have.(If we do have an actual tree data structure, backtracking on it is 
+  called depth-first tree searching).
   </p>
   </fieldset>
   <hr>     <br>
@@ -54,23 +54,23 @@
         }
        </pre>
            </fieldset>
-           <br>
    <fieldset style="background-color: rgb(227, 230, 232);">
        <p>
         Notice that the algorithm is expressed as a boolean function. This is essential to understanding the algorithm. If
         
         solve(n) is true, that means node n is part of a solution--that is, noden is one of the nodes on a path from the root to
-        
+
         some goal node. We say that n is solvable. If solve(n) is false, then there is no path that includes n to any goal node.</p> </fieldset>
         <h3>How does this work?        </h3>
         <ul>
             <li>If any child of n is solvable, then n is solvable  .   </li>
             <li>If no child of n is solvable, then a is not solvable .</li>
         </ul>
-         
+        
         <p>
             Hence, to decide whether any non-leaf node n is solvable (part of a path to a goal nodel, all you have to do is test whether any child of his solvable. This is done recursively, on each child of n. In the above code, this is done by the lines .</p>
-            <fieldset><pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            <fieldset>
+            <pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
             for each child of n {
                  it sovels succeeds, return true
             }
