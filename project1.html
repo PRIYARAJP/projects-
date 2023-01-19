@@ -11,7 +11,7 @@
        <p>Suppose you get to a bad leaf. You can backtrack to continue the search for a good leal by revoking your most recent choice, and trying out the next option in that set of options. If you run out of options, revoke the choice that got you here, and try another choice at that node. If you end up at the root with no options left, there are no good leaves to be found    .</p>
        <p>This needs an example,</p>
        <img src="https://priyarajp.github.io/HTMLFILESEA21/Image_root%20for%20back.png" height="233" width="444" >
-       <pre style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+   
 <ol>
 <li>Starting at Root, your options are A and B. You choose A.</li>
 
@@ -31,40 +31,8 @@
 
 <li> E is good. Congratulations!</li>
       </ol>
-        </pre >
-    <fieldset style="background-color: rgb(227, 230, 232); width: 38cm;" ><p>In this example we drew a picture of a tree. The tree is an abstract model of the possible sequences of choices, we could make. There is also a data structure called a tree, but usually we don't have a data structure to tell us what choices we have. (If we do have an actual tree data structure, backtracking on it is called depth-first tree searching).</p>
-    </fieldset>
-       <BR>
-      
-        <h3>The backtracking algorithm.</h3>
-       <fieldset>
-       <pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
-        boolean solve(Node n){
-            if n is a leaf node {
-                if the leaf is a goal node, return true
-                else return false
-            } else{
-                for each child c of n{
-                    if solve(c) succeeds, return true
-                }
-                return false
-            }
-        }
-       </pre></fieldset>
-   
-       <p>
-        Notice that the algorithm is expressed as a boolean function. This is essential to understanding the algorithm. If
         
-        solve(n) is true, that means node n is part of a solution--that is, noden is one of the nodes on a path from the root to
-        
-        some goal node. We say that n is solvable. If solve(n) is false, then there is no path that includes n to any goal node.</p>
-        <h3>How does this work?        </h3>
-        <ul >
-            <li>If any child of n is solvable, then n is solvable  .          </li>
-            <li>If no child of n is solvable, then a is not solvable .</li>
-        </ul>
-        <p>
-            Hence, to decide whether any non-leaf node n is solvable (part of a path to a goal nodel, all you have to do is test whether any
+    
   <fieldset style="background-color: rgb(227, 230, 232); width: 38cm " > 
   <p >In this example we drew a picture of a tree. The tree is an abstract model of the possible sequences of choices, we could make. There is also a data structure
   called a tree, but usually we don't have a data structure to tell us what choices we have.(If we do have an actual tree data structure, backtracking on it is 
