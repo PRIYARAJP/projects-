@@ -31,9 +31,9 @@
 
 <li> E is good. Congratulations!</li>
       </ol>
-  <fieldset style="background-color: rgb(227, 230, 232);" > <p>In this example we drew a picture of a tree. The tree is an abstract model of the possible sequences of choices, we could make. There is also a data structure called a tree, but usually we don't have a data structure to tell us what choices we have. (If we do have an actual tree data structure, backtracking on it is called depth-first tree searching).</p>
-      </fieldset>
-       <br>
+  <fieldset style="background-color: rgb(227, 230, 232);" > <p>In this example we drew a picture of a tree. The tree is an abstract model of the possible sequences of choices, we could make. There is also a data structure called a tree, but usually we don't have a data structure to tell us what choices we have. (If we do have an actual tree data structure, backtracking on it is called depth-first tree searching).
+  </p></fieldset>
+  <hr>     <br>
         <h3>The backtracking algorithm.</h3>
        <fieldset>
        <pre style="color: dodgerblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
@@ -61,6 +61,10 @@
         <h3>How does this work?        </h3>
         <ul >
             <li>If any child of n is solvable, then n is solvable  .   </li>
+            <li>If no child of n is solvable, then a is not solvable .</li>
+        </ul>
+         <ul >
+            <li>If any child of n is solvable, then n is solvable  .          </li>
             <li>If no child of n is solvable, then a is not solvable .</li>
         </ul>
         <p>
@@ -803,8 +807,9 @@
                                                         <li>BLACK BLACK _____ BLACK WHITE WHITE WHITE </li>
                                                         <li>BLACK BLACK BLACK _____ WHITE WHITE WHITE</li>
                                                     </b></ol>
-                                                    <p class="bix21">Notice that the solution is given in reverse order: BLACK starts out on the left and WHITE on the right, as in the last line. I've added line numbers to the actual output in order to emphasize this point. Backtracking always produces its results (sequence of choices) in reverse order, it is up to you, the programmer, to reverse the results again to get them in the correct order.
-                                                    </p>
+                                                   <fieldset style="background-color: rgb(227, 230, 232);" >
+                                                    <p >Notice that the solution is given in reverse order: BLACK starts out on the left and WHITE on the right, as in the last line. I've added line numbers to the actual output in order to emphasize this point. Backtracking always produces its results (sequence of choices) in reverse order, it is up to you, the programmer, to reverse the results again to get them in the correct order.
+                                                    </p></fieldset >
        <br><br> <br><br>
        
     </body>
