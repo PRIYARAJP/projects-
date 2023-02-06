@@ -4,44 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSSPROJECTPAGE1</title>
+    <title>CSSPROJECTPAGE2</title>
     <link rel="icon" type="image/x-icon" href="https://priyarajp.github.io/HTMLFILESEA21/PR%20LOGO%20.jpg" />
     <style>
         .cards{
-            width: 500px;
+            width: 300px;
             height: 350px;
             background-color: white;
             border: 2px solid black;
             display: flex;
-            margin:100px ;
+            margin:10px ;
             border-radius: 20px;
+            box-sizing: border-box;
+            align-items: center;
         }
        
         .cg4{
             display: flex;
             flex:1;
             background-color: rgb(208, 206, 201);
+            flex-flow:row wrap;
+            justify-content: center;
+            align-items: center;
         }
         .cards1{
-            width: 500px;
-            height: 300px;
+            width: 300px;
+            height: 350px;
             background-color: rgb(208, 206, 201);
-            border: 0px solid black;
+            
             display: flex;
-            margin:100px ;
+            margin:10px ;
+            border-radius: 20px;
+            box-sizing: border-box;
+            align-items: center;
         }
         hr{
             margin-left: -20px;
             margin-right: auto ;
             padding-right: 0px;
+            display: flex;
         }
         .task{
             font-size: 50px;
             padding-left: 1em;
+            display: flex;
         }
         input[type=checkbox]{
         width: 20px;
         height: 20px;
+        display: flex;
        }
        .round{
         width: 1.5cm;
@@ -53,57 +64,72 @@
         position: absolute;
         right: 9.5cm;
         top: 2cm;
+        display: flex;
         
        }
        a{
         text-decoration: none;
         color: #000;
+
+       }
+       hr{
+        color: #000;
+        display: flex;
+       }
+       .has{
+        color:rgb(208, 206, 201) ;
        }
     </style>
 </head>
 <body>
 
     <nav class="task"><a href="https://priyarajp.github.io/projects-/prapg2.html" target="_blank">Tasks</a> <a style="color: skyblue;" href="https://priyarajp.github.io/projects-/prapg2.html">List</a></nav>
-<nav class="cg4"><a href="https://priyarajp.github.io/projects-/prapg2.html" target="_blank">
+    <nav class="cg4">
+        <h2 class="has" >Add New Task</h2>
+    </nav>
+    
+    <nav class="cg4"><a href="https://priyarajp.github.io/projects-/prapg2.html" target="_blank">
     <input type="submit" value=""  class="round" >
     <p style="font-size:0.8cm;position: absolute; right: 10cm ; top: 1.5cm;;"><b>+</b></p> 
     <h2 style="position:absolute ; right: 5cm; top: 2cm;">Add New Task</h2>
-<div class="cards"><a href="https://priyarajp.github.io/projects-/prapg2.html" target="_blank">
-    <a style="margin-left: 19px; margin-top: 20px; font-size: 25px; color: rgb(51, 146, 184);" href="https://priyarajp.github.io/projects-/prapg2.html" target="_blank">Trip to paris<hr><br>
-    <form style="padding-right: 3.3cm;" >
-        <input type="checkbox"  checked disabled >
-        <lable style="color: black;  "><del style="color: rgb(120, 117, 117);">VisitChurch</del></lable><br><br>
-        <lable style="color: black;"><input type="checkbox" style="width: 1cm;"  disabled >Shopping</lable></form></a>
-    </a></div>
+
+    <nav class="cards">
+        <a style="margin-left: 20px; margin-top: 20px; font-size: 25px; color: rgb(51, 146, 184);" href="https://priyarajp.github.io/projects-/prapg2.html" target="_blank">Trip to paris and Enjoyment yourself<hr><br>
+            <form style="padding-right: 0cm;" >
+                <input type="checkbox"  checked disabled >
+                <lable style="color: black;  "><del style="color: rgb(120, 117, 117);">Visit Church   </del></lable><br><br>
+                <lable style="color: black;"><input type="checkbox" style="width: 1cm;"  disabled >Buy Vegetables today</lable></form></a>
+    </nav>
 <nav class="cards">
-    <a style="margin-left: 20px; margin-top: 20px; font-size: 25px; color: rgb(51, 146, 184);" href="https://priyarajp.github.io/projects-/prapg2.html" target="_blank">Trip to paris<hr><br>
-        <form style="padding-right: 3cm;" >
+    <a style="margin-left: 20px; margin-top: 20px; font-size: 25px; color: rgb(51, 146, 184);" href="https://priyarajp.github.io/projects-/prapg2.html" target="_blank">My To Do List for my Kitcheh<hr><br>
+        <form style="padding-right: 0cm;" >
             <input type="checkbox"  checked disabled >
-            <lable style="color: black;  "><del style="color: rgb(120, 117, 117);">VisitChurch</del></lable><br><br>
-            <lable style="color: black;"><input type="checkbox" style="width: 1cm;"  disabled >Shopping</lable></form></a>
+            <lable style="color: black;  "><del style="color: rgb(120, 117, 117);">Visit Supermarket</del></lable><br><br>
+            <lable style="color: black;"><input type="checkbox" style="width: 1cm;"  disabled >Buy Vegetables every day cook </lable></form></a>
 </nav>
 <nav class="cards">
-    <a style="margin-left: 20px; margin-top: 20px; font-size: 25px; color: rgb(51, 146, 184);" href="https://priyarajp.github.io/projects-/prapg2.html" target="_blank">Trip to paris<hr><br>
-        <form style="padding-right: 3cm;" >
+    <a style="margin-left: 20px; margin-top: 20px; font-size: 25px; color: rgb(51, 146, 184);" href="https://priyarajp.github.io/projects-/prapg2.html" target="_blank">Movies I will watch weakly once<hr><br>
+        <form style="padding-right: 0cm;" >
             <input type="checkbox"  checked disabled >
-            <lable style="color: black;  "><del style="color: rgb(120, 117, 117);" >VisitChurch</del></lable><br><br>
-            <lable style="color: black;"><input type="checkbox" style="width: 1cm;"  disabled >Shopping</lable></form></a>
+            <lable style="color: black;  "><del style="color: rgb(120, 117, 117);" >Strenger Things 4</del></lable><br><br>
+            <lable style="color: black;"><input type="checkbox" style="width: 1cm;"  disabled >Avengers Endgame </lable></form></a>
 </nav>
 </nav>
 <nav class="cg4">
 <nav class="cards">
-    <a style="margin-left: 20px; margin-top: 20px; font-size: 25px; color: rgb(51, 146, 184);" href="https://priyarajp.github.io/projects-/prapg2.html" target="_blank">Trip to paris<hr><br>
-        <form style="padding-right: 3cm;" >
+    <a style="margin-left: 20px; margin-top: 20px; font-size: 25px; color: rgb(51, 146, 184);" href="https://priyarajp.github.io/projects-/prapg2.html" target="_blank">Daily Morning Routine for...<hr><br>
+        <form style="padding-right: 0cm;" >
             <input type="checkbox"  checked disabled >
-            <lable style="color: black;  "><del style="color: rgb(120, 117, 117);">VisitChurch</del></lable><br><br>
-            <lable style="color: black;"><input type="checkbox" style="width: 1cm;"  disabled >Shopping</lable></form></a>
+            <lable style="color: black;  "><del style="color: rgb(120, 117, 117);">Wake up at 6 AM</del></lable><br><br>
+            <lable style="color: black;"><input type="checkbox" style="width: 1cm;"  disabled >Books to Read </lable></form></a>
 </nav>
+
 <nav class="cards">
-    <a style="margin-left: 20px; margin-top: 20px; font-size: 25px; color: rgb(51, 146, 184);" href="https://priyarajp.github.io/projects-/prapg2.html" target="_blank">Trip to paris<hr><br>
-        <form style="padding-right: 3cm;" >
+    <a style="margin-left: 20px; margin-top: 20px; font-size: 25px; color: rgb(51, 146, 184);" href="https://priyarajp.github.io/projects-/prapg2.html" target="_blank">Books to Read for get new... <hr><br>
+        <form style="padding-right: 0cm;" >
             <input type="checkbox"  checked disabled >
-            <lable style="color: black;  "><del style="color: rgb(120, 117, 117);">VisitChurch</del></lable><br><br>
-            <lable style="color: black;"><input type="checkbox" style="width: 1cm;"  disabled >Shopping</lable></form></a>
+            <lable style="color: black;  "><del style="color: rgb(120, 117, 117);">Deign of Everyday</del></lable><br><br>
+            <lable style="color: black;"><input type="checkbox" style="width: 1cm;"  disabled >Alchemist</lable></form></a>
 </nav>
 <nav class="cards1"></nav>
 </nav></a>
