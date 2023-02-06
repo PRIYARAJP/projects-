@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cg4{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .task{
+            font-size: 50px;
+            padding-left: 1em;
+        }
+        .cg4{
+            display: flex;
+            flex:1;
+            background-color: rgb(208, 206, 201);
+        }
+        .cards{
+            width: 400px;
+            height: 300px;
+            background-color: white;
+            border: 2px solid black;
+            display: flex;
+            margin:200px ;
+            border-radius: 20px;
+            padding-left: 10px;
+            text-align:left;
+        }
+        .cards:hover{
+            box-shadow: 0 0  5px 5px  black;
+        }
+        input[type=checkbox]{
+        width: 20px;
+        height: 20px;
+       }
+       .circle1{
+        width: 1.2cm;
+        height: 1.2cm;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        top: 10cm;
+        left: 13.6cm;
+        text-align: center;
+        font-size: 1cm;
+        color: black;
+        
+       }
+       .circle{
+        width: 1.2cm;
+        height: 1.2cm;
+        background-color: rgb(4, 188, 250);
+        border-radius: 50%;
+        position: absolute;
+        top: 5.4cm;
+        left: 24.5cm;
+        text-align: center;
+        font-size: 1cm;
+        color: black;
+        
+       }
+       a{
+        text-decoration: none;
+        color: #000;
+       }
+       
+    </style>
+</head>
+<body>
+    <nav class="task"><a href="https://priyarajp.github.io/projects-/pro4pg.html" target="_blank">Tasks</a> <a style="color: skyblue;" href="https://priyarajp.github.io/projects-/pro4pg.html">List</a></nav>
+    <input type="submit" value=""  class="circle1" style=" width: 1.2cm; height: 1.2cm; box-shadow: 0 0 1px  black; border-radius: 50%; color: black; position:absolute ; top: 5.2cm;">
+    <input type="submit" value=""  class="circle" >
+    <p style="font-size:0.8cm;position: absolute; left: 24.9cm ; top: 4.75cm;;"><b><a href="https://priyarajp.github.io/projects-/pro4pg.html" target="_blank">+</a></b></p> 
+    <h2 style="position:absolute ; left: 26cm; top: 5cm;"><a href="https://priyarajp.github.io/projects-/pro4pg.html" target="_blank">Add New Task</a></h2>
+    <p style="font-size:0.8cm;position:absolute; left: 14cm; top: 4.5cm; color: white;"><b><</b></p> 
+    <h2 style="position:absolute ; left: 15.5cm; top: 5cm;">Go Back</h2>
+    <nav class="cg4">
+        <div class="cards">
+            <a style="margin-left: -2px; margin-top: 30px; font-size: 25px; color: rgb(51, 146, 184); " href="https://priyarajp.github.io/projects-/pro4pg.html" target="_blank">Trip to paris<hr><br>
+            <form style="padding-right: 6cm;" >
+                <input type="checkbox"  checked disabled >
+                <lable style="color: black;  "><del style="color: rgb(120, 117, 117);">VisitChurch</del></lable><br><br>
+                <lable style="color: black;"><input type="checkbox" style="width: 1cm;"  disabled >Shopping</lable></form></a>
+            </div>
+    </nav>
+</body>
+</html>
