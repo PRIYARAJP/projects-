@@ -1,0 +1,144 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 50cm;
+}
+.cards{
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    border: 2px solid rgb(118, 210, 247);
+    display: flex;
+   flex-direction: column;
+    margin:10px ;
+    border-radius: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 20px;
+}
+.cards:hover{
+    box-shadow: 0 0  3px 0px  black;
+}
+
+.cg4{
+    display: flex;
+    flex:1;
+    background-color: rgb(208, 206, 201);
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.cards1{
+    width: 350px;
+    height: 350px;
+    background-color: rgb(208, 206, 201);
+    
+    display: flex;
+    margin:10px ;
+    border-radius: 20px;
+    box-sizing: border-box;
+    align-items: center;
+}
+hr{
+    margin-left: -20px;
+    margin-right: auto ;
+    padding-right: 0px;
+    display: flex;
+    color: aqua;
+}
+.task{
+    font-size: 50px;
+    padding-left: 1em;
+    display: flex;
+}
+.head{
+    width: 300px;
+    height: 50px;
+    background-color: rgb(208, 206, 201);
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    margin:10px ;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-sizing: border-box;
+    align-items: center;
+
+}
+@media only screen and (max-width: 856px ){
+       
+       .head{
+        font-size: 20px;
+       }
+    }
+    @media only screen and (max-width: 460px ){
+       
+        .head{
+        font-size: 0px;
+        margin-right: 10%;
+       color:rgb(208, 206, 201); ;
+       }
+    }
+.head1{
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    font-size: 20px;
+    display: flex;
+    margin:10px ;
+    justify-content: left;
+    align-items: center;
+    border-radius: 20px;
+    box-sizing: border-box;
+    align-items: center;
+
+}
+.back{
+font-size: xx-large;
+
+}
+.circle{
+width: 1.4cm;
+height: 1.4cm;
+box-sizing: border-box;
+background-color: rgb(36, 137, 176);
+border-radius: 50%;
+text-align: center;
+font-size: 1.2cm;
+color: rgb(5, 5, 5);
+border: #000 2px solid; 
+color: white;
+}
+.circle:hover{
+box-shadow: 0 0  3px 2px  black;
+}
+input[type=checkbox]{
+width: 20px;
+height: 20px;
+display: flex;
+}
+
+a{
+text-decoration: none;
+color: #000;
+
+}
+hr{
+color: skyblue;
+display: flex;
+}
+.has{
+background-color: rgb(208, 206, 201);
+}
+.cg5{
+    display: flex;
+    flex:1;
+    background-color: rgb(208, 206, 201);
+    margin-right: 10%;
+    flex-flow:row wrap;
+    justify-content:flex-end;
+    align-items:flex-end;
+    
+}
+

@@ -1,0 +1,334 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.cards{
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border: 2px solid skyblue;
+    display: flex;
+    margin:10px ;
+    border-radius: 20px;
+    box-sizing: border-box;
+    align-items: center;
+   
+    
+}
+.cards:hover{
+    box-shadow: 0 0  3px 1px  black;
+}
+
+.head{
+    width: 170px;
+    height: 50px;
+    background-color: rgb(208, 206, 201);
+    
+    display: flex;
+    margin:10px ;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    align-items: center;
+
+}
+@media only screen and (max-width: 856px ){
+       
+       .head{
+        font-size: 15px;
+       }
+    }
+    @media only screen and (max-width: 460px ){
+       
+        .head{
+        font-size: 0px;
+        margin-right: 10%;
+       color:rgb(208, 206, 201); ;
+       }
+    }
+
+.cg4{
+    display: flex;
+    flex:1;
+    background-color: rgb(208, 206, 201);
+    
+    height: 10cm;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.dark{
+    background-color: rgb(208, 206, 201);
+    height: 25cm;
+}
+hr{
+    margin-left: -20px;
+    margin-right: auto ;
+    padding-right: 0px;
+    display: flex;
+}
+
+.cg5{
+    display: flex;
+    flex:1;
+    background-color: rgb(208, 206, 201);
+  
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.task{
+    font-size: 50px;
+    padding-left: 1em;
+    display: flex;
+}
+input[type=checkbox]{
+width: 20px;
+height: 20px;
+display: flex;
+}
+.circle1{
+width: 1.3cm;
+height: 1.3cm;
+box-sizing: border-box;
+background-color: black;
+border-radius: 50%;
+text-align: center;
+font-size: 1cm;
+color: rgb(253, 250, 250);
+border: #000 2px solid;
+}
+.circle1:hover{
+box-shadow: 0 0  3px 2px  black;
+}
+.circle{
+width: 1.4cm;
+height: 1.4cm;
+box-sizing: border-box;
+background-color: rgb(36, 137, 176);
+border-radius: 50%;
+text-align: center;
+font-size: 1.2cm;
+color: rgb(5, 5, 5);
+border: #000 2px solid; 
+color: white;
+}
+.circle:hover{
+box-shadow: 0 0  3px 2px  black;
+}
+a{
+text-decoration: none;
+color: #000;
+
+}
+hr{
+color: skyblue;
+display: flex;
+}
+.back{
+font-size: xx-large;
+
+}
+.op{
+background-color: rgb(46, 44, 38) ;
+opacity: 0.3;
+
+}
+.cg6{
+    display: flex;
+    flex:1;
+    
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    right: 3%;
+}
+.cards3{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border: 2px solid skyblue;
+    display: flex;
+   
+    border-radius: 20px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.cards3:hover{
+    box-shadow: 0 0  3px 0px  black;
+}
+.button{
+background-color: skyblue;
+font-size: x-large;
+margin-top: 20%;
+margin-left: 40%;
+margin-right: 5%;
+border-radius: 20px;
+padding: 3%;
+border: #000 2px solid;
+text-align: center;
+color: #000;
+
+}  
+.button:hover{
+box-shadow: 0 0  3px 0px  black;
+}
+.text{
+        width: 450px;
+        height: 25px;
+        margin-left: 20px;
+    }
+    @media only screen and (max-width: 912px ){
+       
+       .text{
+        width: 450px; 
+       }
+    }
+    @media only screen and (max-width: 460px ){
+       
+        .text{
+            width: 250px; 
+       }
+    }
+    .line{
+width: 496px; 
+}
+@media only screen and (max-width: 912px ){
+       
+       .line{
+        width: 495px; 
+       }
+    }
+    @media only screen and (max-width: 460px ){
+       
+        .line{
+            width: 295px; 
+       }
+    }
+    .text{
+        width: 450px;
+        height: 25px;
+        margin-left: 20px;
+    }
+    .button{
+background-color: skyblue;
+font-size: x-large;
+margin-top: 20%;
+margin-left: 60%;
+margin-right: 5%;
+border-radius: 20px;
+padding: 3%;
+border: #000 2px solid;
+text-align: center;
+color: #000;
+} 
+@media only screen and (max-width: 912px ){
+       
+       .button{
+        margin-top: 10%;
+         margin-left: 60%;
+        margin-right: 2%;
+       }
+    }
+    @media only screen and (max-width: 460px ){
+       
+        .button{
+            margin-top: 10%;
+         margin-left: 50%;
+        margin-right: 2%;
+       }
+    }
+.button:hover{
+box-shadow: 0 0  3px 1px  black;
+}
+.close{
+    position: absolute;
+    top: 15px;
+    left: 88%;
+    right: 20%;
+  
+}
+@media only screen and (max-width: 912px ){
+       
+       .close{
+        position: absolute;
+    top: 20px;
+    left: 82%;
+       }
+    }
+    @media only screen and (max-width: 460px ){
+       
+        .close{
+            position: absolute;
+    top: 20px;
+    left: 82%;
+       }
+    }
+    .cg8{
+    display: flex;
+    flex:1;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    position: absolute;
+    top: 20px;
+    left: 35%;
+    right: 20%;
+}
+@media only screen and (max-width: 912px ){
+       
+       .cg8{
+        position: absolute;
+    
+    left: 20%;
+    right: 20%;
+       }
+    }
+    @media only screen and (max-width: 460px ){
+       
+        .cg8{
+            position: absolute;
+    
+    left: 10%;
+    right: 50%;
+       }
+    }
+.cards3{
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border: 2px solid skyblue;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    position: absolute;
+    top: 150px;
+    left: 0%;
+   
+}
+@media only screen and (max-width: 912px ){
+       
+       .cards3{
+        width: 500px;
+       }
+    }
+    @media only screen and (max-width: 460px ){
+       
+        .cards3{
+            width: 300px;
+            
+       }
+    }
+.cards3:hover{
+    box-shadow: 0 0  3px 0px  black;
+}
+.back{
+    color: #000;
+    font-size: large;
+}
