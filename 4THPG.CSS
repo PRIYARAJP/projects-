@@ -40,9 +40,11 @@ body{
     @media only screen and (max-width: 460px ){
        
         .head{
+            width: 120px;
         font-size: 0px;
         margin-right: 10%;
-       color:rgb(208, 206, 201); ;
+       color:rgb(208, 206, 201); 
+       
        }
     }
 
@@ -331,4 +333,18 @@ box-shadow: 0 0  3px 1px  black;
 .back{
     color: #000;
     font-size: large;
+}
+.head1{
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    font-size: 20px;
+    display: flex;
+    margin:10px ;
+    justify-content: left;
+    align-items: center;
+    border-radius: 20px;
+    box-sizing: border-box;
+    align-items: center;
+
 }
