@@ -97,9 +97,7 @@ font-size: 1cm;
 color: rgb(253, 250, 250);
 border: #000 2px solid;
 }
-.circle1:hover{
 
-}
 .circle{
 width: 1.4cm;
 height: 1.4cm;
@@ -112,9 +110,7 @@ color: rgb(5, 5, 5);
 border: #000 2px solid; 
 color: white;
 }
-.circle:hover{
 
-}
 a{
 text-decoration: none;
 color: #000;
